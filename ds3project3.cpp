@@ -129,7 +129,7 @@
                 }
             }
         }
-   /* for(int j=5;j>=0;j--){
+    for(int j=5;j>=0;j--){
         if((inputColor==color[0][j]||color[0][j]== White) &&Record[0][j]!=Max[0][j]+1){
             if(color[1][j]!= bblue){
                 x=0;
@@ -149,26 +149,7 @@
             }
         }
     }
-    for(int i=4;i>=0;i--){
-        if((inputColor==color[i][5]||color[i][5]== White) &&Record[i][5]!=Max[i][5]+1){
-            if(color[i][4]!= bblue){
-                x=i;
-                y=5;
-            }else{
-                x=i;
-                y=5;
-            }
-        }
-        if((inputColor==color[i][0]||color[i][0]== White) &&Record[i][0]!=Max[i][0]+1){
-            if(color[i][1]!= bblue){
-                x=i;
-                y=1;
-            }else{
-                x=i;
-                y=1;
-            }
-        }
-    }*/
+
         }
         // Any Code You Want to Add
         int getX(){
