@@ -30,7 +30,26 @@
                                     x=i;
                                     y=j;
                                 }
-                            }
+                            }else if(j==5){
+                                if(color[i-1][j]!= bblue|| color[i+1][j]!= bblue || color[i][j-1]!= bblue){
+                                    x=i;
+                                    y=j;
+                                }
+                            }else if(j==0){
+                                if(color[i-1][j]!= bblue|| color[i+1][j]!= bblue||color[i][j+1]!= bblue){
+                                    x=i;
+                                    y=j;
+                                }
+                            }else if(i==4){
+                                if(color[i-1][j]!= bblue|| color[i][j-1]!= bblue ||color[i][j+1]!= bblue){
+                                    x=i;
+                                    y=j;
+                                }
+                            }else if(i==0){
+                                if(color[i+1][j]!= bblue || color[i][j-1]!= bblue ||color[i][j+1]!= bblue){
+                                    x=i;
+                                    y=j;
+                                }
                             }else{
                                 if(color[i-1][j]!= bblue|| color[i+1][j]!= bblue || color[i][j-1]!= bblue ||color[i][j+1]!= bblue){
                                     x=i;
