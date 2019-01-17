@@ -5,8 +5,40 @@
 
 
 
-
-            for(int k=0;k<30;k++){
+ if((inputColor==color[0][0]||color[0][0]== White) &&Record[0][0]== 0){
+                x=0;
+                y=0;
+                return;
+            }
+             if((inputColor==color[0][5]||color[0][5]== White) &&Record[0][5]== 0){
+                x=0;
+                y=5;
+                return;
+            }
+             if((inputColor==color[4][0]||color[4][0]== White) &&Record[4][0]== 0){
+                x=4;
+                y=0;
+                return;
+            }
+             if((inputColor==color[4][5]||color[4][5]== White) &&Record[4][5]== 0){
+                x=4;
+                y=5;
+                return;
+            }
+    //////////////////////////////////////////////////////////////////////////////////2
+            for(int i=4;i>=0;i--){//up
+                for(int j=0;j<=5;j++){//left->right
+                    if(color[i][j] == player1)continue;
+                    if(Max[i][j]==Record[i][j]+1){
+                         if((i<4 && color[i+1][j] ==player1) || (i>0 && color[i-1][j]==player1) || (j>0 && color[i][j-1]==player1) || ((j<5 && color[i][j+1]==player1))){
+                            x=i;
+                            y=j;
+                            return;
+                         }
+                    }
+                }
+            }
+            /*for(int k=0;k<30;k++){
                 for(int i=4;i>=0;i--){//up
                     for(int j=0;j<=5;j++){//left->right
                         if((inputColor==color[i][j]||color[i][j]== White) &&Record[i][j]!=Max[i][j]+1){
@@ -63,7 +95,7 @@
                         }
                     }
                 }
-            }
+            }*/
 ////////////////////////////////////////////////////////////////////////////////////////
             int k=4;
             for(int j=0;j<=5;j++){//right ->left
