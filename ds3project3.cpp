@@ -112,7 +112,7 @@
                 }
             }
 /////////////////////////////////////////////////////////////////////////////////
-        if((inputColor==color[4][5]||color[4][5]== White) &&Record[4][5]== 0){
+      /*  if((inputColor==color[4][5]||color[4][5]== White) &&Record[4][5]== 0){
             x=4;
             y=5;
         }
@@ -127,7 +127,7 @@
          if((inputColor==color[0][0]||color[0][0]== White) &&Record[0][0]== 0){
             x=0;
             y=0;
-        }
+        }*/
         for(int i=4;i>=0;i--){//up
             for(int j=0;j<=5;j++){
                 if((inputColor==color[i][j]||color[i][j]== White) &&Record[i][j]==Max[i][j]){
