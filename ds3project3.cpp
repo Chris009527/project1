@@ -3,14 +3,7 @@
         void makeMove(int Record[5][6], int Max[5][6], Color color[5][6], Color inputColor){
             bool bblue = (inputColor||White||Black);
 
-            for(int i=0;i<=4;i++){//up
-                    for(int j=0;j<=5;j++){//left->right
-                        if((inputColor==color[i][j]||color[i][j]== White) &&Record[i][j]!=Max[i][j]){
-                            x=i;
-                            y=j;
-                        }
-                    }
-            }
+
 
 
             for(int k=0;k<30;k++){
